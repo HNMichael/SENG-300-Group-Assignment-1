@@ -1,27 +1,33 @@
 package groupAssignment1;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.Scanner;
 
 import org.eclipse.jdt.core.dom.AST;
 import org.eclipse.jdt.core.dom.ASTParser;
 
-public class Main {
+public class Main extends IOException {
+	
+	private static String dir;
+	
 	public static void main(String[] args) {
 		
-		InputSource source = new InputSource();
-		Parser parse = new Parser();
-		
 		Scanner input = new Scanner(System.in);
-		System.out.println("Enter directory name: ");
-		String dir = input.nextLine();
+		System.out.println("Enter Directory of interest: ");
+		dir = input.nextLine();
 		input.close();
 		
-		File[] s = source.getSource(dir);
-		parse.getFile(s);
+		Parser parse = new Parser();
+		File source = new File(dir);
 		
+		//change file source to file reader and story source as string[]
+		//while reading through each line check for java types and ad them to a counter maybe?
+		//then set source to be parsed?
 		
+		source.toString();
 		
-		
+	
+	
 	}
 }
