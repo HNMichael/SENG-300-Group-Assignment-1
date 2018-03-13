@@ -1,0 +1,17 @@
+package sources;
+
+public class Source {
+	String a = "Hello"; 
+	String b = "World";
+	int e;
+	int f;
+	char adfasdf;
+	char adkljfj;
+	float lasjfsaljf;
+	enum Quack{a, e};
+	
+	int d = e + f;
+	String c = a + b;
+	
+
+}

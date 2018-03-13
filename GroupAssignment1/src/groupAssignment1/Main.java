@@ -1,4 +1,5 @@
 package groupAssignment1;
+//\\samba.cs.ucalgary.ca\huynm\Documents\SENG\ProjectInteration1\source\SourceCode\src\sources
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -11,14 +12,18 @@ import org.eclipse.jdt.core.dom.ASTParser;
 
 public class Main extends IOException {
 	
-	private static String source;
-	private static String dir;
+
 	
 	public static void main(String[] args) throws IOException {
+		String source;
+		String dir;
+		String type;
 		
 		Scanner input = new Scanner(System.in);
-		System.out.println("Enter Directory of interest: ");
+		System.out.print("Enter Directory of interest: ");
 		dir = input.nextLine();
+		System.out.print("Enter qualified type: ");
+		type = input.nextLine();
 		input.close();
 		
 		Parser parse = new Parser();
@@ -30,10 +35,11 @@ public class Main extends IOException {
 				System.out.println(file.getName());
 				source = readFileToString(file.getAbsolutePath());
 				System.out.println(source);
+				parse.Parse(source.toCharArray(), type);
 			}
 		}
 		
-		parse.Parse(source.toCharArray());
+		//parse.Parse(source.toCharArray());
 		
 	
 	
