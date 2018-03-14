@@ -39,10 +39,6 @@ public class Main extends IOException {
 			}
 		}
 		
-		//parse.Parse(source.toCharArray());
-		
-	
-	
 	}
 	
 	// translate file source code into a string

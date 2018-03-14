@@ -3,22 +3,21 @@ package sources;
 public class Source {
 	String a = "Hello"; 
 	String b = "World";
+	String c = a + b;
 	int e = 1;
 	int f = 2;
-	char cccccc;
-	char dddddd;
-	float fffff;
-	enum Quack{a, e};
+	//int d = e + f;
 	double g = 3.1;
 	double h = 1.9;
-	
-	int d = e + f;
-	String c = a + b;
+	enum Quack{a, e};
 	double i = g + h;
+	float fffff;
+	char cccccc;
+	char dddddd;
 	
 	public void stringtype() {
 		int abM = 0;
-		//e = 5+4;
+		e = 5+4;
 		//f = e +1;
 	}
 	
